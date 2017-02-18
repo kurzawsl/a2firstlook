@@ -6,10 +6,10 @@
     <div>
       Story:<input [(ngModel)]="story">
     </div>
-    <div >
+    <div [style.visibility]="story ? 'visible' : 'hidden'">
       <img [src]="imagePath">
       <br/>
-      <a ></a>
+      <a [href]="link">{{story}}</a>
     </div>
   </div>
 </div>
