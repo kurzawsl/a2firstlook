@@ -2,11 +2,12 @@
   <h3>{{title}}</h3>
   <div>
     2 Way Binding
-    <input >
+    <input [(ngModel)]="story.name">
   </div>
   <p>{{story.name}}</p>
-  <div>
+  <div [style.color]="color">
     1 Way Binding
-    <input >
+    <input [value]="story.name">
   </div>
+  <button (click)="change()">OK</button>
 </div>
