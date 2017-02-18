@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   imagePath = 'images/angular.png';
-  messages: string[] = [];
   title: string;
 
   constructor() {
@@ -17,10 +16,5 @@ export class AppComponent {
   }
 
   log(msg: string, data: string) {
-    this.messages.splice(0, 0, msg);
-    console.log(msg);
-    if (data) {
-      console.log(data);
-    }
   }
 }
